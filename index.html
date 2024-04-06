@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de monedas</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <hr>
+        <h1>Conversor de monedas Nacional</h1>
+        <hr>
+    </header>
+    <main>
+        <div class="cuadro-principal">
+            <h2>Pesos CLP</h2>
+            <input type="text" class="monto-pesos" placeholder="Ingrese el monto en CLP">
+            <p class="titulo-moneda">Moneda a convertir:</p>
+            <select name="moneda-destino" id="moneda-destino">
+                <option value="" selected>Seleccione moneda</option>
+                <option value="dolar"> Dólar </option>
+                <option value="euro"> Euro </option>
+            </select>
+            <button onclick="calculaTC()" class="boton-buscar"> Buscar </button>
+            <p class="resultado">...</p>
+        </div>
+        <div class="grafica">
+            <canvas id="myChart"></canvas> 
+        </div>
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
